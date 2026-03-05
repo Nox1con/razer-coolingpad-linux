@@ -28,6 +28,8 @@ Fan speed range: **500 - 3200 RPM** (50 RPM increments).
 ```bash
 git clone https://github.com/YOUR_USERNAME/razer-coolingpad-linux.git
 cd razer-coolingpad-linux
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -164,6 +166,10 @@ Fans start early and ramp aggressively. Best for gaming or sustained heavy loads
 ## Running as a systemd service
 
 ```bash
+# Create the venv (systemd needs its own Python with dependencies installed)
+python3 -m venv venv
+venv/bin/pip install -r requirements.txt
+
 # Edit the service file to match your install path and preferred curve
 nano razer-coolingpad.service
 
