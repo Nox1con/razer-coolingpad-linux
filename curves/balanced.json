@@ -1,0 +1,12 @@
+{
+  "curve": [
+    { "temp": 55, "percent": 0 },
+    { "temp": 65, "percent": 25 },
+    { "temp": 75, "percent": 55 },
+    { "temp": 85, "percent": 80 },
+    { "temp": 90, "percent": 100 }
+  ],
+  "interval": 3,
+  "hysteresis": 2,
+  "sensors": "auto"
+}
